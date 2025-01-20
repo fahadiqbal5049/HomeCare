@@ -1,0 +1,32 @@
+.hero-section {
+  background: url('https://images.unsplash.com/photo-1593812725955-6d89f01ded2d?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')center;
+  background-size: cover;
+  color: white;
+  padding: 80px 0;
+  border: 1px solid #f9e64f;
+}
+
+.service-card {
+  border: 1px solid #f9e64f;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.featured-provider-card {
+  border: 1px solid #f9e64f;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+footer {
+  background-color: #f9e64f;
+  padding: 20px 0;
+}

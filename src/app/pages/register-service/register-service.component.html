@@ -1,0 +1,131 @@
+<!-- <div class="container mt-5">
+  <h2 class="text-center mb-4">Register Your Service</h2>
+  <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <label for="picture" class="form-label">Upload Picture</label>
+      <input type="file" class="form-control" id="picture" (change)="onFileChange($event)">
+    </div>
+    <div class="mb-3">
+      <label for="name" class="form-label">Name/Company Name</label>
+      <input type="text" class="form-control" id="name" formControlName="name">
+    </div>
+    <div class="mb-3">
+      <label for="cnic" class="form-label">CNIC #</label>
+      <input type="number" class="form-control" id="cnic" formControlName="cnic">
+    </div>
+    <div class="mb-3">
+      <label for="service" class="form-label">Service</label><form class="row g-3">
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail4">
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Password</label>
+          <input type="password" class="form-control" id="inputPassword4">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Address</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress2" class="form-label">Address 2</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">City</label>
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">State</label>
+          <select id="inputState" class="form-select">
+            <option selected>Choose...</option>
+            <option>...</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">Zip</label>
+          <input type="text" class="form-control" id="inputZip">
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Check me out
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Sign in</button>
+        </div>
+      </form>
+      <select class="form-control" id="service" formControlName="service">
+        <option *ngFor="let service of services" [value]="service">{{ service }}</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="location" class="form-label">Location</label>
+      <input type="text" class="form-control" id="location" formControlName="location">
+    </div>
+
+    <div class="mb-3">
+      <label for="serviceDetails" class="form-label">Service Details</label>
+      <textarea class="form-control" id="serviceDetails" formControlName="serviceDetails"></textarea>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Type</label>
+      <div>
+        <input type="checkbox" id="individual" formControlName="type" value="Individual">
+        <label for="individual" class="radiobutton">Individual</label>
+
+        <input type="checkbox" id="company" formControlName="type" value="Company">
+        <label for="company">Company</label>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary" [disabled]="registerForm.invalid">Submit</button>
+  </form>
+</div> -->
+
+
+<div class="container mt-5">
+  <h2 class="text-center mb-4">Register Your Service</h2>
+  <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" class="row g-3">
+    <div class="col-md-6">
+      <label for="inputName" class="form-label">Name/Company Name</label>
+      <input type="text" class="form-control" id="inputName" formControlName="name">
+    </div>
+    <div class="col-md-6">
+      <label for="inputCnic" class="form-label">CNIC #</label>
+      <input type="text" class="form-control" id="inputCnic" formControlName="cnic">
+    </div>
+    <div class="col-md-6">
+      <label for="inputService" class="form-label">Service</label>
+      <select id="inputService" class="form-select" formControlName="service">
+        <option selected>Choose...</option>
+        <option *ngFor="let service of services" [value]="service">{{ service }}</option>
+      </select>
+    </div>
+    <div class="col-md-6">
+      <label for="inputLocation" class="form-label">Location</label>
+      <input type="text" class="form-control" id="inputLocation" formControlName="location">
+    </div>
+    <div class="col-12">
+      <label for="inputServiceDetails" class="form-label">Service Details</label>
+      <textarea class="form-control" id="inputServiceDetails" formControlName="serviceDetails"></textarea>
+    </div>
+    <div class="col-md-6">
+      <label for="inputType" class="form-label">Type</label>
+      <select id="inputType" class="form-select" formControlName="type">
+        <option selected>Choose...</option>
+        <option value="Individual">Individual</option>
+        <option value="Company">Company</option>
+      </select>
+    </div>
+    <div class="col-md-6">
+      <label for="inputPicture" class="form-label">Upload Picture</label>
+      <input type="file" class="form-control" id="inputPicture" (change)="onFileChange($event)">
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">Register Service</button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,108 @@
+  <!-- Header -->
+  <!-- <header class="bg-light py-3">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <a href="#" class="text-dark fs-3">Home Services</a>
+        <nav>
+          <ul class="list-unstyled d-flex gap-3 mb-0">
+            <li><a href="#" class="text-dark">Home</a></li>
+            <li><a href="#services" class="text-dark">Services</a></li>
+            <li><a href="#featured" class="text-dark">Featured Providers</a></li>
+            <li><a href="#contact" class="text-dark">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header> -->
+
+  <!-- Hero Section -->
+  <section class="hero-section text-center">
+    <div class="container">
+      <h1 class="display-4">Find Reliable Home Services Near You</h1>
+      <p class="lead">Get your home maintenance needs covered with just a few clicks</p>
+      <a href="#services" class="btn btn-primary btn-lg">Book a Service</a>
+    </div>
+  </section>
+
+  <!-- Service Categories -->
+  <section id="services" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Services</h2>
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col">
+          <div class="service-card" (click)="navigateToPlumbing()">
+            <img src="https://plus.unsplash.com/premium_photo-1661331729490-14327669b5b9?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid mb-3" alt="Plumbing">
+            <h5>Plumbing</h5>
+            <p>Get your plumbing fixed with reliable professionals</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="service-card" (click)="navigateToCleaning()">
+            <img src="https://plus.unsplash.com/premium_photo-1661331729490-14327669b5b9?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid mb-3" alt="Cleaning">
+            <h5>Cleaning</h5>
+            <p>Professional cleaning services for your home</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="service-card" (click)="navigateToElectricians()">
+            <img src="https://plus.unsplash.com/premium_photo-1661331729490-14327669b5b9?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid mb-3" alt="Electricians">
+            <h5>Electricians</h5>
+            <p>Electricity repair and maintenance at your service</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="service-card" (click)="navigateToGardening()">
+            <img src="https://plus.unsplash.com/premium_photo-1661331729490-14327669b5b9?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid mb-3" alt="Gardening">
+            <h5>Gardening</h5>
+            <p>Transform your garden with expert care</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Providers -->
+  <section id="featured" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Featured Service Providers</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="featured-provider-card">
+            <img src="https://plus.unsplash.com/premium_photo-1661331729490-14327669b5b9?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid mb-3 rounded-circle" alt="Provider 1">
+            <h5>John's Plumbing</h5>
+            <p>5 Stars | Professional plumbing services</p>
+            <a href="#" class="btn btn-primary">Book Now</a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="featured-provider-card">
+            <img src="https://plus.unsplash.com/premium_photo-1661331729490-14327669b5b9?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid mb-3 rounded-circle" alt="Provider 2">
+            <h5>Mary's Cleaning</h5>
+            <p>4.8 Stars | Trusted cleaning experts</p>
+            <a href="#" class="btn btn-primary">Book Now</a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="featured-provider-card">
+            <img src="https://plus.unsplash.com/premium_photo-1661331729490-14327669b5b9?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid mb-3 rounded-circle" alt="Provider 3">
+            <h5>Mike's Electricians</h5>
+            <p>4.9 Stars | Skilled electricians</p>
+            <a href="#" class="btn btn-primary">Book Now</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container text-center">
+      <p>&copy; 2025 Home Services Platform. All Rights Reserved.</p>
+      <p>
+        <a href="#privacy" class="text-dark">Privacy Policy</a> |
+        <a href="#terms" class="text-dark">Terms of Service</a> |
+        <a href="#contact" class="text-dark">Contact</a>
+      </p>
+    </div>
+  </footer>
