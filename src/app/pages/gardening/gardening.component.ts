@@ -19,6 +19,7 @@ userName: string = '';
   userPhone: string = '';
   selectedPlumber: string = '';
   gardeningServices: any[] = [];
+  selectedService: any;
   constructor(private router: Router, private registeredServices: RegisteredService) { }
   ngOnInit(): void {
     this.registeredServices.getPosts().subscribe(services => {
@@ -28,6 +29,7 @@ userName: string = '';
 
     openModal(plumberName: string): void {
       this.selectedPlumber = plumberName;
+      this.selectedService = this.gardeningServices.find(service => service.Name === plumberName);
       const modalElement = document.getElementById('bookingModal');
       if (modalElement) {
         const modal = new bootstrap.Modal(modalElement);
@@ -37,7 +39,4 @@ userName: string = '';
       }
     }
 
-  gotohome(){
-    this.router.navigate(['/home']);
-  }
 }
